@@ -1,0 +1,9 @@
+---
+- name: Cloning Prelim Exam on Ubuntu
+  git:
+    repo: https://github.com/Nichole-Aparato/Aparato_PrelimExam.git
+    dest: /home/aparato/aparato_prelim_exam
+    clone: yes
+    update: yes
+  when: ansible_facts['distribution'] == 'Ubuntu'
+# tasks file for git_clone
